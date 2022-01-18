@@ -88,6 +88,17 @@ body {
   border-radius: 6px;
   z-index: -1;
   top: 100%;
+  animation: drop-box 0.2s linear alternate;
+}
+
+@keyframes drop-box {
+  0% {
+    padding: 0px 20px;
+  }
+  100% {
+    padding: 20px 20px;
+  }
+
 }
 
 .nav-item:hover .drop-list {
@@ -132,7 +143,8 @@ body {
   box-shadow: 0 0 20px 0 rgb(62 28 131 / 10%);
   border-radius: 6px;
   transition: all 0.35s linear;
-  z-index: 99;
+  z-index: 100;
+  animation: drop-box 0.2s linear alternate;
 }
 
 .nav-item:hover .drop-explore-box {
@@ -233,22 +245,22 @@ body {
 
 .circle-img {
   position: relative;
-  left: 82%;
-  top: -500px;
-  animation: img 1.5s infinite both;
+  left: 80%;
+  top: 350px;
+  animation: img 2.5s linear infinite;
 }
 
 @keyframes img {
   0% {
-    transform: rotateZ(0deg);
+    transform: rotate(0deg);
   }
   100% {
-    transform: rotateZ(360deg);
+    transform: rotate(360deg);
   }
 }
 
-#hero-inner {
-  padding-top: 300px;
+.hero-desc {
+  padding-top: 100px;
   background-color: #dff6f1;
 }
 
@@ -257,6 +269,15 @@ body {
   top: -60px;
   background-color: #02a95c;
   padding: 65px 35px;
+}
+
+.card {
+  margin-bottom: 20px;
+  height: 200px;
+  background-image: url('https://gaviaspreview.com/wp/funden/wp-content/uploads/2021/11/bg-lines-transparent.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .idea-title {
   color: #fff;
@@ -290,15 +311,6 @@ body {
   margin-left: 15px;
   color: #fff;
   transform: rotate(-180deg);
-}
-
-.card {
-  margin-bottom: 20px;
-  height: 200px;
-  background-image: url('https://gaviaspreview.com/wp/funden/wp-content/uploads/2021/11/bg-lines-transparent.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .category-box {
